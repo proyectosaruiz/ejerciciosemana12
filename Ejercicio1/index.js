@@ -3,14 +3,16 @@
 const ps = require("prompt-sync");
 const parseArgs = require("minimist");
 const prompt = ps();
-const fs = require(`fs`);
-
-filehandle.write(`data.txt`, `eventos-amilcar`, (error) => {
-  if (error) {
-    console.log(`Error: ${error}`);
-  }
-});
+const fs = require("fs");
 
 let fecha = prompt("Indica la fecha  ");
 let evento = prompt("Indica el evento ");
-console.log(`${fecha} el dia del evento llamado ${evento} `);
+let cargaFecha = (fecha, evento);
+
+fs.appendFile("data.json", cargaFecha, "utf-8", function (error) {
+  if (error) {
+    console.log(`Error: ${error}`);
+  } else {
+    console.log(`La ${fecha} es el evento ${evento}`);
+  }
+});

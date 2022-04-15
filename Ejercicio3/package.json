@@ -1,0 +1,26 @@
+{
+  "name": "ejercicio3",
+  "version": "1.0.0",
+  "description": "ejercicio3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "amilcar ruiz",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "minimist": "^1.2.6",
+    "morgan": "^1.10.0",
+    "next": "^12.1.5",
+    "nodemon": "^2.0.15",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "prompt-sync": "^4.2.0",
+    "ps": "^1.0.0"
+  }
+}
